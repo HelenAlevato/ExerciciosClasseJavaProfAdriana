@@ -1,58 +1,58 @@
 public class InstrumentoMusical {
-    private String[] violao;
-    private String[] violino;
-    private String[] violoncelo;
+    private String[] tablaturasDeViolao;
+    private String[] tablaturasDeViolino;
+    private String[] tablaturasDeVioloncelo;
     
     public InstrumentoMusical() {
     }
     
     public InstrumentoMusical(String[] violao, String[] violino, String[] violoncelo) {
-        this.violao = violao;
-        this.violino = violino;
-        this.violoncelo = violoncelo;
+        this.tablaturasDeViolao = violao;
+        this.tablaturasDeViolino = violino;
+        this.tablaturasDeVioloncelo = violoncelo;
     }
 
     public void tocarViolao() {
         System.out.println("\n Músicas para aprender a tocarno violão: ");
-        for (int i = 0; i < violao.length; i++) {
-            System.out.println("\t - " + this.violao[i]);
+        for (int i = 0; i < tablaturasDeViolao.length; i++) {
+            System.out.println("\t - " + this.tablaturasDeViolao[i]);
         }
     }
 
     public void tocarViolino() {
         System.out.println("\n Músicas para aprender a tocar no violino: ");
-        for (int i = 0; i < violino.length; i++) {
-            System.out.println("\t - " + this.violino[i]);
+        for (int i = 0; i < tablaturasDeViolino.length; i++) {
+            System.out.println("\t - " + this.tablaturasDeViolino[i]);
         }
     }
 
     public void tocarVioloncelo() {
         System.out.println("\n Músicas para aprender a tocar no violoncelo: ");
-        for (int i = 0; i < violoncelo.length; i++) {
-            System.out.println("\t - " + this.violoncelo[i]);
+        for (int i = 0; i < tablaturasDeVioloncelo.length; i++) {
+            System.out.println("\t - " + this.tablaturasDeVioloncelo[i]);
         }
     }
 
     public void setViolao(String[] violao) {
-        this.violao = violao;
+        this.tablaturasDeViolao = violao;
     }
 
     public String[] getViolao() {
-        return this.violao;
+        return this.tablaturasDeViolao;
     }
     public void setLer(String[] violino) {
-        this.violino = violino;
+        this.tablaturasDeViolino = violino;
     }
 
     public String[] getViolino() {
-        return this.violino;
+        return this.tablaturasDeViolino;
     }
     public void setVioloncelo(String[] violoncelo) {
-        this.violoncelo = violoncelo;
+        this.tablaturasDeVioloncelo = violoncelo;
     }
 
     public String[] getVioloncelo() {
-        return this.violoncelo;
+        return this.tablaturasDeVioloncelo;
     }
 
     public static void main(String[] args) {
